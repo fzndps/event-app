@@ -12,7 +12,7 @@ type EventModel struct {
 
 type Event struct {
 	ID          int    `json:"id"`
-	OwnerId     int    `json:"ownerid" binding:"required"`
+	OwnerId     int    `json:"ownerid"`
 	Name        string `json:"name" binding:"required,min=3"`
 	Description string `json:"description" binding:"required,min=10"`
 	Date        string `json:"date" binding:"required,datetime=2006-01-02"`
