@@ -3,6 +3,7 @@ package main
 import (
 	"log"
 	"rest-api-event-app/cmd/migrate"
+	_ "rest-api-event-app/docs"
 	"rest-api-event-app/internal/database"
 	"rest-api-event-app/internal/env"
 
@@ -10,6 +11,15 @@ import (
 
 	"github.com/joho/godotenv"
 )
+
+// @title           Rest API Event App
+// @version         1.0
+// @description     Creating a REST API event app with Gin and JWT
+// @host            localhost:8080
+// @BasePath        /api/v1
+// @securityDefinitions.apikey BearerAuth
+// @in header
+// @name Authorization
 
 type application struct {
 	port      int
